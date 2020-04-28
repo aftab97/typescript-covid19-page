@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { Card, CardContent, Typography, Grid } from "@material-ui/core";
+import { spacing } from "@material-ui/system";
 import styles from "./Cards.module.css";
 import CountUp from "react-countup";
 import cx from "classnames";
@@ -19,7 +20,7 @@ export const Cards: React.FC<IData> = ({
 }) => {
   return (
     <div className={styles.container}>
-      <Grid container spacing={3} justify="center">
+      <Grid container spacing={2} justify="center">
         <Grid
           item
           component={Card}

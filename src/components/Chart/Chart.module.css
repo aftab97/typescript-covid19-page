@@ -4,3 +4,10 @@
   align-items: center;
   width: 85%;
 }
+
+/* .container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+} */

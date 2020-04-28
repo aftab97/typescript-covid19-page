@@ -1,3 +1,14 @@
 .MuiGrid-container {
   flex-wrap: nowrap !important;
 }
+
+@media only screen and (max-width: 750px) {
+  .MuiGrid-container {
+    flex-wrap: wrap !important;
+  }
+
+  .MuiGrid-container > div {
+    width: 300px;
+    padding-bottom: 20px !important;
+  }
+}

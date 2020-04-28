@@ -8,6 +8,7 @@
 
 .infected {
   border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+  width: 300px;
 }
 
 .deaths {
@@ -18,6 +19,8 @@
   border-bottom: 10px solid rgba(0, 255, 0, 0.5);
 }
 
-.MuiGrid-container {
-  flex-wrap: nowrap !important;
+@media only screen and (max-width: 750px) {
+  .card {
+    margin: 0 1% !important;
+  }
 }

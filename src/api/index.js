@@ -27,11 +27,12 @@ export const fetchData = async () => {
 export const fetchGraphData = async () => {
   try {
     const { data } = await axios.get(`${url}/daily`);
-    // console.log(totalConfirmed);
+    // console.log(data);
 
     const modifiedData = data.map((dailyData) => ({
       confirmed: dailyData.confirmed.total,
       deaths: dailyData.deaths.total,
+      china: dailyData.mainlandChina,
       date: dailyData.reportDate,
     }));
 
