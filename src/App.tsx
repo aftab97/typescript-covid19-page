@@ -3,6 +3,7 @@ import { Cards } from "./components/Cards/Cards";
 import { Chart } from "./components/Chart/Chart";
 import styles from "./App.module.css";
 import { fetchData, fetchGraphData } from "./api";
+import { CountryPicker } from "./components/CountryPicker/CountryPicker";
 
 export const App: React.FC = () => {
   interface IData {
@@ -52,6 +53,7 @@ export const App: React.FC = () => {
       />
       <h2>World Stats</h2>
       <Chart />
+      <CountryPicker />
     </div>
   );
 };
